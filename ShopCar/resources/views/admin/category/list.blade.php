@@ -25,6 +25,9 @@
                             <h3 class="card-title"><strong>Category List</strong></h3>
 
                         </div>
+                        <div  class="card-header">
+                        <a class="btn btn-primary" href="{{ route('category.create') }}">Thêm mới</a>
+                        </div>
                         <div class="card-header">
                             @if(Session::has('success'))
                             <span style="color: green">{{ Session::get('success') }}</span>
@@ -64,14 +67,13 @@
                                 </tbody>
 
                             </table>
-                            <a class="btn btn-primary" href="{{ route('category.create') }}">Thêm mới</a>
                         </div>
                         <!-- /.card-body -->
                         
                     </div>
                     <!-- /.card -->
                     
-                   <div aria-label="Page navigation">
+                   <div aria-label="pagination justify-content-center mt-4">
                         {{ $categories->links() }}
                    </div>
 

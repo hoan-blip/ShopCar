@@ -25,6 +25,9 @@
                             <h3 class="card-title"><strong>Product List</strong></h3>
 
                         </div>
+                        <div  class="card-header">
+                        <a class="btn btn-primary" href="{{ route('product.create') }}">Thêm mới</a>
+                        </div>
                         <div class="card-header">
                             @if(Session::has('success'))
                             <span style="color: green">{{ Session::get('success') }}</span>
@@ -78,7 +81,7 @@
                                 </tbody>
 
                             </table>
-                            <a class="btn btn-primary" href="{{ route('product.create') }}">Thêm mới</a>
+                            
                             </div>
                         </div>
                         <!-- /.card-body -->

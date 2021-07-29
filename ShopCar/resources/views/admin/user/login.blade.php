@@ -18,7 +18,7 @@
 <body class="hold-transition login-page" >
 <div class="login-box">
   <div class="login-logo">
-    <a href="{{ url('/admin') }}/index2.html"><b>Admin</b> Neon Cart.</a>
+    <a href="{{ route('login') }}"><b>Admin</b> Neon Cart.</a>
   </div>
   <!-- @if (count($errors) > 0)
          <ul>
@@ -86,7 +86,7 @@
       <!-- /.social-auth-links -->
       </form>
       <p class="mb-1">
-        <a href="forgot-password.html">Forgot password ?</a>
+        <a href="https://id.funtap.vn/password/reset">Forgot password ?</a>
       </p>
       
     </div>

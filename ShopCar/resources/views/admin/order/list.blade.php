@@ -78,7 +78,9 @@
 
                 </div>
                 <!-- /.card -->
-            
+                <div aria-label="pagination justify-content-center mt-4">
+                        {{ $orders->links() }}
+                   </div>
             </div>
             <!-- /.col -->
         </div>
